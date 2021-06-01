@@ -1,0 +1,66 @@
+body, html
+	display: flex
+	width: 100%
+	height: 100%
+	padding: 0px
+	margin: 0px
+
+input
+    padding: 10px
+    border: 2px solid #00BFFF
+    width: 180px
+    font-size: 12px
+    outline: none
+
+input:focus
+        border: 2px solid #238866
+
+.show
+	display: flex !important
+
+.hide
+	display: none !important
+
+.point
+	&-l
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		margin: 0px
+		padding: 0px
+		list-style: none
+    
+	&-i
+		display: flex
+		flex-direction: column
+		padding: 5px
+		border: 1px solid
+		margin: 2px
+
+	&-address
+		margin-bottom: 10px
+
+	&-return
+		display: flex
+		margin: 10px
+
+	&-name,
+	&-desc
+		display: none
+
+		.itemActive &
+			display: flex
+
+#map
+	width: 600px
+	height: 400px
+
+.balloon-point
+	&-name
+		margin: 10px 0
+		font-weight: bold
+
+	&-address
+		margin: 10px 0
+		font-weight: bold
+		color: blue
